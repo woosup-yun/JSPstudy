@@ -1,7 +1,5 @@
 package chap08;
 
-import java.io.Serializable;
-
 public class MyBean {
 	private String name;
 	private int id;
