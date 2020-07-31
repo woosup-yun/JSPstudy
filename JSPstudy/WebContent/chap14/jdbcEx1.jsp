@@ -12,7 +12,8 @@
 
 <%
 // 1. JDBC 클래스 로딩
-Class.forName("com.mysql.cj.jdbc.Driver");
+// servlet 실행시 추가 test 중 주석처리
+//Class.forName("com.mysql.cj.jdbc.Driver");
 
 // DB 접속정보 작성 
 String url = "jdbc:mysql://localhost/test1" // 데이터베이스 경로

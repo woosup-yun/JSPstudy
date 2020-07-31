@@ -48,4 +48,11 @@
     <servlet-name>myServlet</servlet-name>
     <url-pattern>/filterTest</url-pattern>
   </servlet-mapping>
+  
+  <!--JDBC를 웹 어플리케이션 실행시 처음 1번만 로딩하도록 서블릿 추가-->
+  <servlet>
+  	<servlet-name>mysqlJDBCLoader</servlet-name>
+  	<servlet-class>jdbc.MySQLDriverLoader</servlet-class>
+  	<load-on-startup>1</load-on-startup>
+  </servlet>
 </web-app>
